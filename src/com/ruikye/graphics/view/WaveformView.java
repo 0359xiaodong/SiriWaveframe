@@ -15,9 +15,9 @@ import android.view.View;
  * @since 14/9/24.
  */
 public class WaveformView extends View {
-    private static final float MIN_AMPLITUDE = 0.0175f;
-    private float mPrimaryWidth = 2.0f;
-    private float mSecondaryWidth = 1.0f;
+    private static final float MIN_AMPLITUDE = 0.0575f;
+    private float mPrimaryWidth = 1.0f;
+    private float mSecondaryWidth = 0.5f;
     private float mAmplitude = MIN_AMPLITUDE;
     private int mWaveColor = Color.DKGRAY;
     private int mDensity = 2;
