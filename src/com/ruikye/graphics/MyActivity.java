@@ -59,7 +59,7 @@ public class MyActivity extends Activity {
         mWaveformView.post(new Runnable() {
             @Override
             public void run() {
-                mWaveformView.updateAmplitude(volume * 0.1f / 10000f);
+                mWaveformView.updateAmplitude(volume * 0.1f / 4000);
             }
         });
     }

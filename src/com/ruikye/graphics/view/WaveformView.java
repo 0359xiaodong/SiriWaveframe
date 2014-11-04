@@ -15,14 +15,15 @@ import android.view.View;
  * @since 14/9/24.
  */
 public class WaveformView extends View {
+    private static final float MIN_AMPLITUDE = 0.0175f;
     private float mPrimaryWidth = 2.0f;
     private float mSecondaryWidth = 1.0f;
-    private float mAmplitude = 0.0075f;
+    private float mAmplitude = MIN_AMPLITUDE;
     private int mWaveColor = Color.DKGRAY;
-    private int mDensity = 1;
+    private int mDensity = 2;
     private int mWaveCount = 5;
     private float mFrequency = 0.1875f;
-    private float mPhaseShift = -0.075f;
+    private float mPhaseShift = -0.1875f;
     private float mPhase = mPhaseShift;
 
     private Paint mPrimaryPaint;
@@ -63,7 +64,7 @@ public class WaveformView extends View {
     }
 
     public void updateAmplitude(float amplitude) {
-        mAmplitude = Math.max(amplitude, 0.0075f);
+        mAmplitude = Math.max(amplitude, MIN_AMPLITUDE);
     }
 
     @Override
@@ -114,6 +115,6 @@ public class WaveformView extends View {
         }
 
         mPhase += mPhaseShift;
-        postInvalidate();
+        invalidate();
     }
 }
