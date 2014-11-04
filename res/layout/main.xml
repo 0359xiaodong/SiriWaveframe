@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <com.ruikye.graphics.view.WaveformView
+        android:layout_weight="1"
+        android:id="@+id/waveform_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <!--<com.ruikye.graphics.view.GLWaveformView-->
+        <!--android:id="@+id/gl_waveform_view"-->
+        <!--android:layout_weight="1"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"/>-->
+</LinearLayout>
+
