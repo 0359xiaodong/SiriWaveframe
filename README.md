@@ -5,4 +5,4 @@ SiriWaveframe
 
 ##示例：
 
-![doc/SiriWaveframe.gif]
+<img width="800px" height="480px" src="doc/SiriWaveframe.gif"/>
